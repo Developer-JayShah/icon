@@ -1,58 +1,215 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-ul{
-    margin: 0;
-    padding: 0;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%,-50%);
-     display: flex;
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgba(128, 128, 128, 0.26);
+    }
+    .social
+    {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+    }
+    
+    .social ul {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    
+    .social ul li {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        border-radius: 100%;
+        margin: 0px 10px;
+        position: relative;
+    }
+    
+    .social ul li a {
+        display: block;
+        color: #000;
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    
+    .social ul li a i {
+        line-height: 60px;
+    }
+    
+    .social ul li:nth-child(1) {
+        /* background-color:; */
+        border: 1px solid  #cd201f;
+    }
+    
+    .social ul li:nth-child(2) {
+        /* background-color: ; */
+        border: 1px solid #25D366;
+    }
+    
+    .social ul li:nth-child(3) {
+        /* background-color: ; */
+        border: 1px solid #3b5999;
+        
+    }
+    
+    .social ul li:nth-child(4) {
+        /* background-color: ; */
+        border: 1px solid #55acee;
+        
+    }
+    
+    .social ul li:nth-child(5) {
+        /* background-color: ; */
+        border: 1px solid #dad615;
 
-}
-ul li{
-    list-style-type: none;
-    position: relative;
-    width: 120px;
-    height: 120px;
-    background: #fff;
-    margin: 0 20px;
-    /* border: 2px solid #262626; */
-    box-sizing: border-box;
-    /* border-radius: 50%; */
-    transition: .5s;
+    }
+    
+    .social ul li:nth-child(6) {
+        /* background-color: ; */
+        border: 1px solid #e4405f;
 
-}
-ul li .fab{
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%,-50%);
-          font-size: 48px;
-          color: #262626;
-          transition: .5s;
-}
-ul li:hover .fab{
-    color: #fff;
-}
-ul li::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #e91e63;
-    border-radius: 50%;
-    transform: scale(1);
-    transition: .5s;
-    opacity: 0;
-}
-ul li:hover::before{
-    opacity: 1;
-    transform: scale(.8);
-    border: 3px dashed #262626;
-}
-/*   
+    }
+    
+    .social ul li:nth-child(7) {
+        /* background-color: ; */
+        border: 1px solid #0077B5;
+    }
+
+    .social ul li:nth-child(1)::before{
+        content: '';
+        position: absolute;
+        left: 0%;
+        width: inherit;
+        height: inherit;
+        background-color: #cd201f;
+        border-radius: 50%;
+        transition: all 0.3s linear;
+        z-index: -1;
+        opacity: 0;
+    }
+    .social ul li:nth-child(1):hover::before{
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    .social ul li:nth-child(1) :hover i{
+        color: white;
+    }
+    .social ul li:nth-child(2)::before{
+        content: '';
+        position: absolute;
+        left: 0%;
+        width: inherit;
+        height: inherit;
+        background-color:#25D366;
+        border-radius: 50%;
+        transition: all 0.3s linear;
+        z-index: -1;
+        opacity: 0;
+    }
+    .social ul li:nth-child(2):hover::before{
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    .social ul li:nth-child(2) :hover i{
+        color: white;
+    }
+    .social ul li:nth-child(3)::before{
+        content: '';
+        position: absolute;
+        left: 0%;
+        width: inherit;
+        height: inherit;
+        background-color:#3b5999;
+        border-radius: 50%;
+        transition: all 0.3s linear;
+        z-index: -1;
+        opacity: 0;
+    }
+    .social ul li:nth-child(3):hover::before{
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    .social ul li:nth-child(3)  :hover i{
+        color: white;
+    }
+    .social ul li:nth-child(4)::before{
+        content: '';
+        position: absolute;
+        left: 0%;
+        width: inherit;
+        height: inherit;
+        background-color: #55acee;
+        border-radius: 50%;
+        transition: all 0.3s linear;
+        z-index: -1;
+        opacity: 0;
+    }
+    .social ul li:nth-child(4):hover::before{
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    .social ul li:nth-child(4) :hover i{
+        color: white;
+    }
+    .social ul li:nth-child(5)::before{
+        content: '';
+        position: absolute;
+        left: 0%;
+        width: inherit;
+        height: inherit;
+        background-color:  #dad615;
+        border-radius: 50%;
+        transition: all 0.3s linear;
+        z-index: -1;
+        opacity: 0;
+    }
+    .social ul li:nth-child(5):hover::before{
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    .social ul li:nth-child(5) :hover i{
+        color: white;
+    }
+    .social ul li:nth-child(6)::before{
+        content: '';
+        position: absolute;
+        left: 0%;
+        width: inherit;
+        height: inherit;
+        background-color: #e4405f;
+        border-radius: 50%;
+        transition: all 0.3s linear;
+        z-index: -1;
+        opacity: 0;
+    }
+    .social ul li:nth-child(6):hover::before{
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    .social ul li:nth-child(6) :hover i{
+        color: white;
+    }
+    .social ul li:nth-child(7)::before{
+        content: '';
+        position: absolute;
+        left: 0%;
+        width: inherit;
+        height: inherit;
+        background-color: #0077B5;
+        border-radius: 50%;
+        transition: all 0.3s linear;
+        z-index: -1;
+        opacity: 0;
+    }
+    .social ul li:nth-child(7):hover::before{
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    .social ul li:nth-child(7):hover i{
+        color: white;
+    }
+    
